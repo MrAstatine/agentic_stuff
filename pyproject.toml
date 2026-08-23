@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "pydantic[email]>=2.13.4",
-    "langchain>=0.1.0",
+    "langchain>=0.2.0",
     "langchain-community>=0.1.0",
     "langchain-tavily>=0.2.11",
     "langchain-openai>=0.1.0",
@@ -19,4 +19,8 @@ dependencies = [
     "certifi>=2024.12.5",
     'langsmith>=0.1.0',
     'streamlit>=1.30.0',
+    'beautifulsoup4>=4.13.2',
+    'readability-lxml',
+    'trafilatura',
+    'lxml>=4.9.3',
 ]
