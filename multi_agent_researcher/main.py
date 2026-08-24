@@ -1,5 +1,10 @@
-from tools.tools import web_search, scrape_url
-from rich import print
+"""Legacy command-line entry point; use app.py for the Streamlit application."""
 
-# print(web_search("latest news about Andaman and Nicobar Islands"))
-print(scrape_url.invoke("https://www.w3schools.com/"))
+from .pipelines.pipeline import run_research_pipeline
+
+if __name__ == "__main__":
+    topic = (
+        "Comparison between Andaman and Nicobar Islands and Lakshadweep Islands "
+        "in terms of geography, culture, biodiversity, and tourism potential."
+    )
+    run_research_pipeline(topic)
