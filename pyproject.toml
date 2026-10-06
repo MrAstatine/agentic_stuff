@@ -23,5 +23,6 @@ dependencies = [
     'readability-lxml',
     'trafilatura',
     'lxml>=4.9.3',
-    'rich'
+    'rich',
+    'langgraph'
 ]
